@@ -17,6 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+rightscale_marker :begin
 
 configure_options = node['python']['configure_options'].join(" ")
 
@@ -50,3 +51,5 @@ bash "build-and-install-python" do
   EOF
   not_if { ::File.exists?(install_path) }
 end
+
+rightscale_marker :begin

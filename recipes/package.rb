@@ -17,6 +17,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+rightscale_marker :begin
 
 # COOK-1016 Handle RHEL/CentOS namings of python packages, by installing EPEL repo & package
 # This implementation was determined a stopgap measure until CHEF-2410 is implemented and widespread.
@@ -56,3 +57,5 @@ python_pkgs.each do |pkg|
     action :install
   end
 end
+
+rightscale_marker :end

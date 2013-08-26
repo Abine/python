@@ -17,9 +17,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+rightscale_marker :begin
 
 include_recipe "python::pip"
 
 python_pip "virtualenv" do
   action :install
 end
+
+rightscale_marker :end

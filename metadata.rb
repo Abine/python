@@ -6,6 +6,7 @@ version           "1.0.8"
 
 depends           "build-essential"
 depends           "yum"
+depends           "rightscale"
 
 recipe "python::default", "Installs python, pip, and virtualenv"
 recipe "python::package", "Installs python using packages."
